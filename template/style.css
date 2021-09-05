@@ -1,0 +1,131 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font: 1.6rem Helvetica;
+    height: 100vh;
+    margin: 0; 
+}
+
+.grid-Container{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main";
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem 1Fr;
+    height: 100%;
+}
+
+.header{
+    grid-area: header;  
+    background-color: beige;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.main{
+    grid-area: main;
+}
+
+.name a{
+    color:darkblue;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu a{
+    color: darkblue;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: darkcyan;
+}
+
+/* Home Screen */
+a{
+    text-decoration: none;
+}
+.allItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.allItems li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    flex: 0 1 34rem;
+    margin: 1rem;
+    height: 45rem;
+    border-bottom: .1rem gray;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    height: 100%;
+}
+
+.itemImage{
+    max-width: 34rem;
+    max-height: 34rem;
+}
+
+.itemName{
+    font-size: 2rem;
+}
+
+.itemPrice{
+    font-size: 2.5rem;
+}
+
+.itemRating{
+    font-size: 1rem;
+}
+
+.name button{
+     font-size: 3rem;
+     padding: 0.5rem;
+     background: none;
+     border: none;
+     color: white;
+     cursor: pointer;
+
+}
+
+.sidebar{
+    position: fixed;
+    transform: translateX(-30rem);
+    width: 30rem;
+    background: beige;
+    height: 100%;
+}
+
+.sidebarCloseButton{
+
+    border-radius: 50%;
+    border: 0.1rem black;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0.5rem;
+    top: 1.5rem;
+
+}
+
+.sidebar.open{
+    transform: translateX(0);
+}

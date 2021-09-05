@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            InstaShop
+        </title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="grid-Container">
+            <header class="header">
+                <div class="name">
+                    <button onclick="openSidebar()">
+                        &#9776;
+                    </button>
+                    <a href="index.html">InstaShop</a>  
+                </div>
+                <div class="menu">
+                    <a href="cart.html">Cart</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </header>
+            <aside class="sidebar">
+                <h3>
+                    Shopping Categories
+                </h3>
+                <button class="sidebarCloseButton" onclick="closeSidebar()">
+                    x
+                </button>
+                <ul>
+                    <li>
+                        <a href="cakes.html"> Cakes</a>
+                    </li>
+                    <li>
+                        <a href="sushibake.html"> Sushi Bakes</a>
+                    </li>              
+                </ul>
+            </aside>
+            <main class="main">
+                <div class="allItems">
+                    <ul class="items">
+                        <li>
+                            <div class="item">   
+                                    <a href="item.html"><img class="itemImage" src="images/sushi bake.jpg" alt="Sushi Bake"/></a>
+            
+                                <div class="itemName">
+                                    <a href="item.html">Sushi Bake</a>
+                                </div>
+                                <div class="itemRating">
+                                    4.6 Stars out of 5
+                                </div>
+                                <div class="itemPrice">
+                                    $15
+                                </div>
+                            </div>    
+                        </li> 
+                        <li>
+                            <div class="item">   
+                                    <a href="item.html"><img class="itemImage" src="images/sushi bake.jpg" alt="Sushi Bake"/></a>
+            
+                                <div class="itemName">
+                                    <a href="item.html">Sushi Bake</a>
+                                </div>
+                                <div class="itemRating">
+                                    4.6 Stars out of 5
+                                </div>
+                                <div class="itemPrice">
+                                    $15
+                                </div>
+                            </div>    
+                        </li>                               
+                    </ul> 
+                </div>    
+            </main>
+        </div>
+        <script>
+            function openSidebar(){
+                document.querySelector(".sidebar").classList.add("open");
+            }
+
+            function closeSidebar(){
+                document.querySelector(".sidebar").classList.remove("open");
+            }
+        </script>
+    </body>
+</html>
