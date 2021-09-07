@@ -33,7 +33,7 @@ export default {
 
     },
     {   
-        _id: "3",
+        _id: "4",
         category: "Lion King",
         name: "Sushi Bake",
         image: "images/d1.jpg",
@@ -44,7 +44,7 @@ export default {
 
     },
     {
-        _id: "4",
+        _id: "5",
         category: "All in One",
         name: "Sushi Bake",
         image: "images/d1.jpg",
