@@ -31,8 +31,8 @@ export default {
     },
     {   
         id: "4",
-        category: "Lion King",
-        name: "Sushi Bake",
+        category: "Sushi Bake",
+        name: "Lion King",
         image: '/images/d1.jpg',
         price: 15,
         rating: 4.5,
@@ -41,8 +41,8 @@ export default {
     },
     {
         id: "5",
-        category: "All in One",
-        name: "Sushi Bake",
+        category: "Sushi Bake",
+        name: "All In One",
         image: '/images/d1.jpg',
         price: 15,
         rating: 4.5,

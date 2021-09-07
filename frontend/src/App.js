@@ -5,7 +5,7 @@ import {BrowserRouter, Route, Link} from 'react-router-dom';
 import HomeScreen from './Screens/HomeScreen';
 import ItemScreen from './Screens/ItemScreen'; 
 import CartScreen from './Screens/CartScreen';
-
+import SignInScreen from './Screens/SignInScreen';
 
 function App() {
   const openSidebar = () =>{
@@ -26,8 +26,8 @@ function App() {
                   <Link to="/">InstaShop</Link>  
               </div>
               <div className="menu">
-                  <a href="cart.html">Cart </a>
-                  <a href="signin.html">Sign-In</a>
+                  <Link to="/cart/:id?">Cart </Link>
+                  <Link to="/signin"> Sign-In </Link>
               </div>
           </header>
           <aside className="sidebar">
@@ -49,7 +49,8 @@ function App() {
           <main className="main">
                   <Route path="/item/:id" component={ItemScreen} />
                   <Route path="/cart/:id?" component={CartScreen} />
-                  <Route path="/" exact={true} component={HomeScreen} />  
+                  <Route path="/" exact={true} component={HomeScreen} /> 
+                  <Route path="/signin" component={SignInScreen} /> 
                   
           </main>
       </div>
